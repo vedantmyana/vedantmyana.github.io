@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vedant Myana — AI Developer</title>
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar" class="navbar">
+  <div class="container navbar-inner">
+    <a href="#home" class="logo" data-scroll>VM<span class="accent">.</span></a>
+
+    <nav class="nav-links">
+      <a href="#home" data-section="home" class="nav-link active" data-scroll>Home</a>
+      <a href="#about" data-section="about" class="nav-link" data-scroll>About</a>
+      <a href="#skills" data-section="skills" class="nav-link" data-scroll>Skills</a>
+      <a href="#languages" data-section="languages" class="nav-link" data-scroll>Languages</a>
+      <a href="#projects" data-section="projects" class="nav-link" data-scroll>Projects</a>
+      <a href="#contact" data-section="contact" class="nav-link" data-scroll>Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button type="button" id="auth-btn" class="btn-outline" data-testid="button-login" style="display:none;">Log in</button>
+      <a href="#contact" class="btn-primary pulse-glow" data-scroll>Let's Talk</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <video autoplay muted loop playsinline class="bg-video" style="filter: brightness(0.45) saturate(1.2);">
+      <source src="./assets/hero-bg.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay overlay-vertical"></div>
+    <div class="overlay overlay-horizontal"></div>
+    <div class="overlay overlay-tint"></div>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-inner fade-stagger">
+      <div class="fade-item">
+        <span class="pill">AI Developer &amp; Creative Technologist</span>
+      </div>
+      <h1 class="hero-title fade-item">
+        <span class="block">Vedant Myana</span>
+        <span class="block text-gradient">AI Developer</span>
+      </h1>
+      <p class="hero-desc fade-item">
+        Building intelligent systems, immersive web experiences, and scalable solutions at the frontier of technology and innovation.
+      </p>
+      <div class="hero-actions fade-item">
+        <a href="#projects" class="btn-primary btn-lg" data-scroll>Explore My Work</a>
+        <a href="#about" class="btn-glass btn-lg" data-scroll>Who I Am</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="section-bg">
+    <video autoplay muted loop playsinline class="bg-video" style="filter: brightness(0.35) saturate(1.2);">
+      <source src="./assets/about-bg.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay overlay-vertical-soft"></div>
+    <div class="overlay overlay-tint-about"></div>
+  </div>
+
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="pill">About Me</span>
+      <h2 class="section-title">Building <span class="text-gradient">Tomorrow</span>,<br />Starting Today.</h2>
+    </div>
+
+    <div class="intro-card reveal">
+      <div class="intro-card-glow"></div>
+      <div class="intro-card-content">
+        <div class="intro-badge">
+          <span class="dot"></span>
+          <span class="intro-badge-text">Introduction</span>
+          <span class="dot"></span>
+        </div>
+        <p class="intro-text-lg">
+          Hi, I'm <span class="name-gradient">Vedant Myana</span> — a student currently preparing for
+          <span class="highlight">JEE Main</span> with the goal of becoming an
+          <span class="highlight">NITian</span> and building a successful future in the Technology industry.
+        </p>
+        <p class="intro-text-sm">
+          Passionate about AI development, web engineering, startup culture, financial independence, and the limitless possibilities of technology. My ambition is to work at <span class="text-white-strong">Google</span>, launch my own startup, and contribute to innovations that reshape the world.
+        </p>
+      </div>
+    </div>
+
+    <div class="pillars-grid reveal">
+      <div class="pillar-card" data-color="#A855F7" data-glow="rgba(168,85,247,0.3)">
+        <div class="pillar-glow"></div>
+        <div class="pillar-icon" style="background:#A855F718;border:1px solid #A855F733;color:#A855F7;">⚙</div>
+        <h3 class="pillar-title">AI Developer</h3>
+        <p class="pillar-desc">Building intelligent systems, automation tools, and AI-powered web applications that solve real-world problems.</p>
+      </div>
+      <div class="pillar-card" data-color="#7C3AED" data-glow="rgba(124,58,237,0.3)">
+        <div class="pillar-glow"></div>
+        <div class="pillar-icon" style="background:#7C3AED18;border:1px solid #7C3AED33;color:#7C3AED;">◎</div>
+        <h3 class="pillar-title">NITian Aspirant</h3>
+        <p class="pillar-desc">Currently pushing hard in JEE Main preparation — driven by discipline, consistency, and a long-term vision of engineering excellence.</p>
+      </div>
+      <div class="pillar-card" data-color="#06B6D4" data-glow="rgba(6,182,212,0.3)">
+        <div class="pillar-glow"></div>
+        <div class="pillar-icon" style="background:#06B6D418;border:1px solid #06B6D433;color:#06B6D4;">&lt;/&gt;</div>
+        <h3 class="pillar-title">Web Developer</h3>
+        <p class="pillar-desc">Crafting full-stack applications with React, Node.js, and modern toolchains. Clean code, sharp UI, seamless UX.</p>
+      </div>
+      <div class="pillar-card" data-color="#10B981" data-glow="rgba(16,185,129,0.3)">
+        <div class="pillar-glow"></div>
+        <div class="pillar-icon" style="background:#10B98118;border:1px solid #10B98133;color:#10B981;">↗</div>
+        <h3 class="pillar-title">Finance &amp; Investing</h3>
+        <p class="pillar-desc">Deeply interested in financial markets, risk analysis, and wealth-building strategies for long-term freedom.</p>
+      </div>
+      <div class="pillar-card" data-color="#F59E0B" data-glow="rgba(245,158,11,0.3)">
+        <div class="pillar-glow"></div>
+        <div class="pillar-icon" style="background:#F59E0B18;border:1px solid #F59E0B33;color:#F59E0B;">🌐</div>
+        <h3 class="pillar-title">Startup Vision</h3>
+        <p class="pillar-desc">Dreaming big — building products that scale globally and create real impact. The journey to founding a future tech company starts now.</p>
+      </div>
+      <div class="pillar-card" data-color="#EF4444" data-glow="rgba(239,68,68,0.3)">
+        <div class="pillar-glow"></div>
+        <div class="pillar-icon" style="background:#EF444418;border:1px solid #EF444433;color:#EF4444;">💡</div>
+        <h3 class="pillar-title">Innovation &amp; Google</h3>
+        <p class="pillar-desc">Fuelled by creativity, problem-solving, and a relentless drive to one day work at Google and reshape what technology can do.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section bordered">
+  <div class="section-bg">
+    <video autoplay muted loop playsinline class="bg-video" style="filter: brightness(0.35) saturate(1.3);">
+      <source src="./assets/skills-bg.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay overlay-vertical-soft"></div>
+    <div class="overlay overlay-tint-about"></div>
+  </div>
+  <div class="grid-lines"></div>
+
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="pill">Core Capabilities</span>
+      <h2 class="section-title">Skills &amp; <span class="text-gradient">Expertise</span></h2>
+      <p class="section-sub">A focused set of capabilities honed through real projects, relentless practice, and a drive to master every domain I enter.</p>
+    </div>
+
+    <div class="skills-grid reveal" id="skills-grid"></div>
+  </div>
+</section>
+
+<!-- ============ LANGUAGES ============ -->
+<section id="languages" class="section">
+  <div class="section-bg">
+    <video autoplay muted loop playsinline class="bg-video" style="filter: brightness(0.35) saturate(1.3);">
+      <source src="./assets/language-bg.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay overlay-vertical-soft"></div>
+    <div class="overlay overlay-tint-about"></div>
+  </div>
+
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="pill">Tech Arsenal</span>
+      <h2 class="section-title">Languages &amp; <span class="text-gradient">Technologies</span></h2>
+      <p class="section-sub">A curated stack of tools I wield to craft extraordinary digital experiences — from pixel to production.</p>
+    </div>
+
+    <div class="filters reveal" id="tech-filters"></div>
+
+    <div class="tech-grid reveal" id="tech-grid"></div>
+
+    <div class="stats-bar reveal">
+      <div class="stat">
+        <div class="stat-value">10+</div>
+        <div class="stat-label">Technologies Mastered</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">1+</div>
+        <div class="stat-label">Year of Experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">2+</div>
+        <div class="stat-label">Projects Shipped</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section projects-section">
+  <div class="section-bg">
+    <video autoplay muted loop playsinline class="bg-video" style="filter: brightness(0.32) saturate(1.2);">
+      <source src="./assets/projects-bg.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay overlay-vertical-strong"></div>
+    <div class="overlay overlay-tint-projects"></div>
+  </div>
+
+  <div class="container projects-container">
+    <div class="coming-soon-card reveal" id="coming-soon-card">
+      <div class="coming-soon-glow"></div>
+      <div class="coming-soon-body">
+        <div class="led led-tl"></div>
+        <div class="led led-tr"></div>
+        <div class="led led-bl"></div>
+        <div class="led led-br"></div>
+
+        <div class="accent-row">
+          <span class="accent-line accent-line-left"></span>
+          <span class="accent-text">Something New</span>
+          <span class="accent-line accent-line-right"></span>
+        </div>
+
+        <h2 class="coming-soon-title">Coming Soon</h2>
+
+        <div class="coming-soon-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section contact-section">
+  <div class="contact-glow"></div>
+
+  <div class="container contact-container">
+    <div class="contact-panel">
+      <div class="contact-grid-bg"></div>
+
+      <div class="contact-flex">
+        <div class="contact-info reveal">
+          <h2 class="section-title left">Initiate <br /><span class="text-gradient">Contact</span></h2>
+          <p class="contact-desc">Want to collaborate, discuss ideas, or just say hello? Reach out — I'm always open to interesting conversations and opportunities.</p>
+
+          <div class="contact-links">
+            <a href="mailto:myanavedant3@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-icon">@</div>
+              <div>
+                <div class="contact-label">EMAIL</div>
+                <div class="contact-value">myanavedant3@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://github.com/vedantmyana" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-icon">GH</div>
+              <div>
+                <div class="contact-label">GITHUB</div>
+                <div class="contact-value">Vedant Myana</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/vedantmyana" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-icon">in</div>
+              <div>
+                <div class="contact-label">LINKEDIN</div>
+                <div class="contact-value">Vedant Myana</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form reveal">
+          <div class="field">
+            <label for="name">Your Name</label>
+            <div class="field-box">
+              <input type="text" id="name" name="name" required placeholder="Your Name" data-testid="input-name" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <div class="field-box">
+              <input type="email" id="email" name="email" required placeholder="you@example.com" data-testid="input-email" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <div class="field-box">
+              <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project or idea..." data-testid="input-message"></textarea>
+            </div>
+          </div>
+          <button type="submit" id="submit-btn" class="submit-btn" data-testid="button-submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> VEDANT MYANA. ALL SYSTEMS OPERATIONAL.</p>
+  </footer>
+</section>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
